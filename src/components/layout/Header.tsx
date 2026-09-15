@@ -19,9 +19,9 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#home" },
-    { name: "À propos", href: "#about" },
-    { name: "Produits", href: "#products" },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Portfolio", href: "#portfolio" },
     { name: "Services", href: "#services" },
   ];
 
@@ -36,7 +36,7 @@ export function Header() {
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-brand-accent rounded flex items-center justify-center font-heading font-bold text-white group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 bg-brand-accent rounded flex items-center justify-center font-heading font-bold text-white group-hover:scale-105 transition-transform shadow-[0_0_15px_rgba(244,63,94,0.3)]">
             M
           </div>
           <span className="font-heading font-bold text-xl tracking-tight text-white">
@@ -55,8 +55,8 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-          <Link href="#contact" className="inline-flex h-10 items-center justify-center rounded-full bg-brand-accent px-6 text-sm font-medium text-white transition-colors hover:bg-brand-accent/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent">
-            Nous contacter
+          <Link href="#contact" className="inline-flex h-10 items-center justify-center rounded-full bg-brand-accent px-6 text-sm font-medium text-white transition-colors hover:bg-brand-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent shadow-[0_0_15px_rgba(244,63,94,0.2)]">
+            Get in touch
           </Link>
         </nav>
 
@@ -71,7 +71,7 @@ export function Header() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-brand-900 border-b border-white/10 p-6 flex flex-col gap-4 shadow-xl">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-brand-900/95 backdrop-blur-md border-b border-white/10 p-6 flex flex-col gap-4 shadow-xl">
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -82,8 +82,8 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-          <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="inline-flex h-10 mt-4 w-full items-center justify-center rounded-full bg-brand-accent px-6 text-sm font-medium text-white transition-colors hover:bg-brand-accent/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent">
-            Nous contacter
+          <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="inline-flex h-12 mt-4 w-full items-center justify-center rounded-full bg-brand-accent px-6 text-base font-medium text-white transition-colors hover:bg-brand-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent">
+            Get in touch
           </Link>
         </div>
       )}

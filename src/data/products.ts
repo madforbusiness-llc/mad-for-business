@@ -5,48 +5,61 @@ export interface Product {
   category: string;
   tags: string[];
   imageUrl: string;
-  link?: string;
+  url?: string;
+  status: "live" | "coming_soon";
+  theme: string;
 }
 
 export const products: Product[] = [
   {
     id: "idishyou",
     name: "iDishYou",
-    description: "Marketplace culinaire connectant cuisiniers à domicile et clients avec une expérience fluide et authentique.",
+    description: "A culinary marketplace connecting home cooks and customers with a seamless, authentic experience.",
     category: "Marketplace / Foodtech",
-    tags: ["Maroc", "App Mobile", "Cuisine"],
+    tags: ["Morocco", "Mobile App", "Food"],
     imageUrl: "/images/products/idishyou.jpg",
+    url: "https://idishyou.com",
+    status: "live",
+    theme: "from-orange-500/20 to-rose-500/20"
   },
   {
     id: "ravium",
     name: "Ravium",
-    description: "Application communautaire incontournable pour les amateurs de festivals, événements et de vie nocturne.",
-    category: "Communauté / Événementiel",
-    tags: ["Sorties", "Réseau Social", "Billetterie"],
+    description: "The ultimate community app for festival, event, and nightlife enthusiasts.",
+    category: "Community / Events",
+    tags: ["Nightlife", "Social", "Ticketing"],
     imageUrl: "/images/products/ravium.jpg",
+    status: "coming_soon",
+    theme: "from-purple-500/20 to-pink-500/20"
   },
   {
     id: "syndichubs",
     name: "SyndicHubs",
-    description: "Plateforme SaaS innovante de gestion de copropriétés facilitant la vie des syndics et des résidents grâce à l'IA.",
+    description: "An innovative SaaS platform for property management, making life easier for syndics and residents through AI.",
     category: "SaaS / Proptech",
-    tags: ["Gestion", "IA", "Immobilier"],
+    tags: ["Management", "AI", "Real Estate"],
     imageUrl: "/images/products/syndichubs.jpg",
+    status: "coming_soon",
+    theme: "from-blue-500/20 to-cyan-500/20"
   },
   {
     id: "skoolhubs",
     name: "SkoolHubs",
-    description: "Plateforme éducative et communautaire nouvelle génération pour transformer l'expérience d'apprentissage.",
+    description: "A next-generation educational and community platform to transform the learning experience.",
     category: "EdTech",
-    tags: ["Éducation", "Communauté", "E-learning"],
+    tags: ["Education", "Community", "E-learning"],
     imageUrl: "/images/products/skoolhubs.jpg",
+    status: "coming_soon",
+    theme: "from-emerald-500/20 to-teal-500/20"
   },
   {
     id: "showyourcause",
     name: "ShowYourCause",
-    description: "Boutique en ligne de vêtements engagés permettant de soutenir des causes à travers la mode.",
+    description: "An impact-driven online clothing store allowing people to support causes through fashion.",
     category: "E-commerce",
-    tags: ["Mode", "Impact social", "Boutique"],
+    tags: ["Fashion", "Social Impact", "Store"],
     imageUrl: "/images/products/showyourcause.jpg",
+    status: "coming_soon",
+    theme: "from-amber-500/20 to-yellow-500/20"
   }
 ];

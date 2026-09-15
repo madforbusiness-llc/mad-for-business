@@ -2,29 +2,28 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lightbulb, Trophy, Globe2, Target } from "lucide-react";
+import { Lightbulb, Trophy, Globe2, Target, Users, Zap } from "lucide-react";
 
 const values = [
   {
     icon: Lightbulb,
-    title: "Innovation Continue",
-    description: "Nous repoussons constamment les limites technologiques pour créer des expériences utilisateur remarquables et des solutions modernes."
+    title: "Continuous Innovation",
+    description: "We don't just build apps; we build ventures. Our portfolio spans from culinary marketplaces to property management AI, constantly pushing boundaries."
   },
   {
     icon: Trophy,
-    title: "Qualité Premium",
-    description: "L'excellence est notre standard. Chaque ligne de code et chaque pixel sont pensés pour offrir une performance et une esthétique parfaites."
+    title: "Premium Quality",
+    description: "Excellence is our baseline. Whether it's a foodtech app like iDishYou or an EdTech platform like SkoolHubs, we demand perfect execution."
   },
   {
     icon: Target,
-    title: "Impact Local",
-    description: "Ancrés au Maroc et en Afrique du Nord, nous développons des produits qui répondent aux besoins spécifiques de notre région."
+    title: "Local Roots",
+    description: "Deeply anchored in Morocco, we understand local market dynamics while engineering products capable of scaling anywhere."
   },
   {
     icon: Globe2,
-    title: "Ambition Mondiale",
-    description: "Nos standards de développement et notre vision sont internationaux, préparant chaque produit pour une expansion globale."
+    title: "Global Ambition",
+    description: "Our standards are international. We build robust, scalable architectures ready to compete on a global stage from day one."
   }
 ];
 
@@ -35,67 +34,87 @@ export function About() {
     offset: ["start end", "end start"]
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const y1 = useTransform(scrollYProgress, [0, 1], [50, -50]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <section id="about" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-brand-800">
       <div className="container mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
-          {/* Text Content */}
+        
+        <div className="max-w-3xl mb-20">
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-sm font-medium text-brand-accent uppercase tracking-wider mb-3">À propos de M.A.D for Business</h2>
-            <h3 className="text-3xl md:text-5xl font-bold font-heading text-white mb-6 leading-tight">
-              L'excellence digitale au service de l'innovation
+            <h2 className="text-sm font-medium text-brand-accent uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-brand-accent"></span>
+              About M.A.D for Business
+            </h2>
+            <h3 className="text-4xl md:text-6xl font-bold font-heading text-white mb-8 leading-tight">
+              A studio that builds <span className="text-brand-accent italic font-light">actual businesses</span>.
             </h3>
-            <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              M.A.D for Business est une <strong>Single Member-Managed Limited Liability Company</strong> spécialisée dans la création de solutions digitales de pointe et la prestation de services technologiques haut de gamme.
-            </p>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Notre mission est de concevoir et développer des produits numériques qui transforhoment les idées en réalités fonctionnelles, tout en maintenant une exigence absolue sur le design, l'expérience utilisateur et les performances techniques.
-            </p>
+            <div className="space-y-6 text-muted-foreground text-xl leading-relaxed">
+              <p>
+                M.A.D for Business is a <strong>Single Member-Managed Limited Liability Company</strong> operating as a premium digital venture studio. We don't just write code; we create comprehensive digital solutions.
+              </p>
+              <p>
+                Our mission is to engineer digital products that <strong className="text-white">transform</strong> ambitious ideas into functional realities. From social platforms for nightlife to e-commerce for social impact, we maintain absolute rigor in design, user experience, and technical performance.
+              </p>
+            </div>
           </motion.div>
+        </div>
 
-          {/* Value Cards */}
-          <motion.div 
-            style={{ y }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {values.map((value, index) => (
+        {/* Staggered Value Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-12">
+          <motion.div style={{ y: y1 }} className="space-y-8 lg:space-y-12">
+            {[values[0], values[1]].map((value, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6 }}
+                className="bg-brand-900/50 border border-white/5 p-8 md:p-10 rounded-3xl hover:border-brand-accent/30 transition-colors group"
               >
-                <Card className="h-full border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors">
-                  <CardHeader>
-                    <div className="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-4">
-                      <value.icon size={24} />
-                    </div>
-                    <CardTitle className="text-xl text-white">{value.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {value.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                <div className="w-14 h-14 rounded-2xl bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                  <value.icon size={28} />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-4">{value.title}</h4>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {value.description}
+                </p>
               </motion.div>
             ))}
           </motion.div>
-
+          
+          <motion.div style={{ y: y2 }} className="space-y-8 lg:space-y-12 md:mt-24">
+            {[values[2], values[3]].map((value, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6 }}
+                className="bg-brand-900/50 border border-white/5 p-8 md:p-10 rounded-3xl hover:border-brand-accent/30 transition-colors group"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                  <value.icon size={28} />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-4">{value.title}</h4>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  {value.description}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
+
       </div>
       
       {/* Background decoration */}
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-brand-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[800px] h-[800px] bg-brand-accent/5 rounded-full blur-[150px] pointer-events-none"></div>
     </section>
   );
 }

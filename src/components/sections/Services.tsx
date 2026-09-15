@@ -7,33 +7,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const services = [
   {
     icon: Code2,
-    title: "Développement Web",
-    description: "Conception de plateformes web sur-mesure, performantes et scalables, utilisant les dernières technologies (Next.js, React)."
+    title: "Web Engineering",
+    description: "Building scalable, high-performance web platforms using modern stacks like Next.js and React."
   },
   {
     icon: Smartphone,
-    title: "Applications Mobiles",
-    description: "Création d'expériences mobiles natives et cross-platform fluides pour iOS et Android."
+    title: "Mobile Experiences",
+    description: "Crafting fluid native and cross-platform mobile applications for iOS and Android ecosystems."
   },
   {
     icon: Blocks,
-    title: "Solutions SaaS",
-    description: "Architecture et développement complet de plateformes B2B et B2C basées sur le cloud."
+    title: "SaaS Architecture",
+    description: "End-to-end development of complex cloud-based B2B and B2C software solutions."
   },
   {
     icon: Sparkles,
-    title: "Intégration IA",
-    description: "Enrichissement de vos produits avec des fonctionnalités d'Intelligence Artificielle de pointe pour automatiser et innover."
+    title: "AI Integration",
+    description: "Enhancing products with cutting-edge Artificial Intelligence to automate processes and innovate features."
   },
   {
     icon: CreditCard,
-    title: "Fintech & Paiements",
-    description: "Intégration sécurisée de solutions de paiement adaptées aux marchés locaux (Maroc/MENA) et internationaux."
+    title: "Fintech & Payments",
+    description: "Secure integration of payment gateways tailored for both local (MENA) and international markets."
   },
   {
     icon: CloudCog,
     title: "Cloud & DevOps",
-    description: "Infrastructure robuste, déploiement continu et optimisation des coûts sur AWS, Google Cloud ou Vercel."
+    description: "Designing robust infrastructure, CI/CD pipelines, and cost optimization on AWS or Vercel."
   }
 ];
 
@@ -52,7 +52,7 @@ export function Services() {
             viewport={{ once: true }}
             className="text-sm font-medium text-brand-accent uppercase tracking-wider mb-3"
           >
-            Nos Compétences
+            Core Capabilities
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
@@ -61,7 +61,7 @@ export function Services() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-5xl font-bold font-heading text-white mb-6"
           >
-            Des services taillés pour l'excellence
+            Expertise tailored for scale
           </motion.h3>
         </div>
 
@@ -74,9 +74,9 @@ export function Services() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-colors">
+              <Card className="h-full border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-brand-accent/20 transition-all duration-300">
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-800 to-brand-900 border border-white/10 flex items-center justify-center text-brand-accent mb-6 shadow-inner">
+                  <div className="w-14 h-14 rounded-2xl bg-brand-800 border border-white/10 flex items-center justify-center text-brand-accent mb-6 shadow-inner">
                     <service.icon size={28} />
                   </div>
                   <CardTitle className="text-xl text-white font-heading">{service.title}</CardTitle>

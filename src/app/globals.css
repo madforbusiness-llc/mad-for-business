@@ -4,34 +4,35 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-space-grotesk);
+  --font-heading: var(--font-syne);
 
-  /* Custom Colors for M.A.D for Business */
-  --color-brand-900: #050a16;
-  --color-brand-800: #0a1128;
-  --color-brand-700: #0f1c3f;
-  --color-brand-600: #142756;
-  --color-brand-500: #1a3472;
-  --color-brand-accent: #3b82f6;
+  /* Custom Colors for M.A.D for Business - Deep warm dark with Coral accents */
+  --color-brand-900: #0c0a09; /* stone-950 */
+  --color-brand-800: #1c1917; /* stone-900 */
+  --color-brand-700: #292524; /* stone-800 */
+  --color-brand-600: #44403c; /* stone-700 */
+  --color-brand-500: #57534e; /* stone-600 */
+  --color-brand-accent: #f43f5e; /* rose-500 (coral) */
+  --color-brand-accent-hover: #e11d48; /* rose-600 */
 
   /* shadcn/ui base vars (adapted for dark theme) */
-  --color-border: #1f2937;
-  --color-input: #1f2937;
-  --color-ring: #3b82f6;
+  --color-border: #292524;
+  --color-input: #292524;
+  --color-ring: #f43f5e;
   --color-primary: #ffffff;
-  --color-primary-foreground: #000000;
-  --color-secondary: #1f2937;
+  --color-primary-foreground: #0c0a09;
+  --color-secondary: #1c1917;
   --color-secondary-foreground: #ffffff;
-  --color-muted: #111827;
-  --color-muted-foreground: #9ca3af;
-  --color-accent: #1e3a8a;
+  --color-muted: #1c1917;
+  --color-muted-foreground: #a8a29e;
+  --color-accent: #f43f5e;
   --color-accent-foreground: #ffffff;
 }
 
 :root {
   /* Forced Dark Mode */
-  --background: #020617; /* Very dark slate / black */
-  --foreground: #f8fafc;
+  --background: #0c0a09; 
+  --foreground: #fafaf9;
 }
 
 body {
@@ -42,5 +43,5 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk), sans-serif;
+  font-family: var(--font-syne), sans-serif;
 }

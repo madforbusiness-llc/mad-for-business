@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,18 +7,18 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://madforbusiness.com"),
-  title: "M.A.D for Business | Digital Studio",
-  description: "Créateur de solutions et services numériques premium. Basé au Maroc, ambition internationale.",
+  title: "M.A.D for Business | Premium Digital Studio",
+  description: "Creator of premium digital solutions and services. Based in Morocco, building for the world.",
   openGraph: {
-    title: "M.A.D for Business | Digital Studio",
-    description: "Créateur de solutions et services numériques premium.",
+    title: "M.A.D for Business | Premium Digital Studio",
+    description: "Creator of premium digital solutions and services.",
     url: "https://madforbusiness.com",
     siteName: "M.A.D for Business",
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         alt: "M.A.D for Business",
       }
     ],
-    locale: "fr_MA",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -40,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className="dark">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen bg-background text-foreground`}>
+    <html lang="en" className="dark">
+      <body className={`${inter.variable} ${syne.variable} antialiased min-h-screen bg-background text-foreground`}>
         {children}
       </body>
     </html>
