@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,18 +15,23 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://madforbusiness.com"),
-  title: "M.A.D for Business | Premium Digital Studio",
-  description: "Creator of premium digital solutions and services. Based in Morocco, building for the world.",
+  title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
+  description: "Concepteur et éditeur de solutions numériques & plateformes digitales. Based in Wyoming (USA) & Morocco, building for the world.",
+  icons: {
+    icon: "/logo-cropped.png",
+    shortcut: "/logo-cropped.png",
+    apple: "/logo-cropped.png",
+  },
   openGraph: {
-    title: "M.A.D for Business | Premium Digital Studio",
-    description: "Creator of premium digital solutions and services.",
+    title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
+    description: "Building & scaling high-impact digital products. Based in Morocco, building for the world.",
     url: "https://madforbusiness.com",
     siteName: "M.A.D for Business",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/logo-cropped.png",
+        width: 1024,
+        height: 578,
         alt: "M.A.D for Business",
       }
     ],
@@ -42,7 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.variable} ${syne.variable} antialiased min-h-screen bg-background text-foreground`}>
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
