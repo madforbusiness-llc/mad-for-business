@@ -14,7 +14,9 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://madforbusiness.com"),
+  // Adresse officielle du site. À remplacer par ton domaine le jour où tu en
+  // achètes un (et à brancher dans Vercel : Settings → Domains).
+  metadataBase: new URL("https://mad-for-business.vercel.app"),
   title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
   description: "Concepteur et éditeur de solutions numériques & plateformes digitales. Based in Wyoming (USA) & Morocco, building for the world.",
   icons: {
@@ -25,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
     description: "Building & scaling high-impact digital products. Based in Morocco, building for the world.",
-    url: "https://madforbusiness.com",
+    url: "https://mad-for-business.vercel.app",
     siteName: "M.A.D for Business",
     images: [
       {
