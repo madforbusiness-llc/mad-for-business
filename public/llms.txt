@@ -1,0 +1,68 @@
+# M.A.D for Business
+
+> Venture studio and digital lab that designs, engineers and operates its own
+> portfolio of software products: marketplaces, SaaS platforms and community
+> apps. Registered as an LLC in Sheridan, Wyoming (USA), with its engineering
+> team in Morocco. Five proprietary products are live today.
+
+M.A.D for Business is not a classic development agency. It conceives, funds and
+operates its own products, and partners with founders on custom platforms. All
+products listed below were built and are run by the studio.
+
+## Products
+
+- [iDishYou](https://idishyou.com): culinary marketplace connecting home cooks
+  with customers. Category: marketplace / foodtech. Status: live.
+- [Ravium](https://ravium-462e9.web.app): community app for festival, event and
+  nightlife enthusiasts. Category: community / events. Status: live.
+- [SyndicHubs](https://syndichubs.com): SaaS platform for property management,
+  built for syndics and residents, with AI assistance. Category: SaaS /
+  proptech. Status: live.
+- [SkoolHubs](https://skoolhubs.org): educational and community platform for
+  schools and learners. Category: edtech. Status: live.
+- [ShowYourCause](https://showyourcause.com): impact-driven clothing store
+  letting people support causes through fashion. Category: e-commerce.
+  Status: live.
+
+## Services
+
+- Custom web and SaaS platform engineering (Next.js, TypeScript, cloud-native)
+- Mobile and cross-platform application development
+- Marketplace and two-sided platform architecture
+- Venture building: product strategy, MVP delivery, scaling and operations
+
+Services are described on the home page under the "Services" section.
+
+## Pages importantes
+
+- [Home](https://mad-for-business.vercel.app/): company overview, services and
+  the full product portfolio.
+- [Legal Notice](https://mad-for-business.vercel.app/legal): company name, legal
+  form, registered office, hosting provider, intellectual property and data
+  protection policy.
+
+## Documentation
+
+No public technical documentation is published at this time.
+
+## FAQ
+
+No FAQ page is published at this time.
+
+## Contact
+
+- Email: mad.for.buisness@gmail.com
+- Registered office: 30 N Gould St Ste N, Sheridan, WY 82801, United States
+- Legal form: Single Member-Managed Limited Liability Company
+- Contact form: https://mad-for-business.vercel.app/#contact
+
+# A decommenter au fur et a mesure des publications. Ne jamais lister une URL
+# qui renvoie 404 : un llms.txt qui pointe vers des pages mortes signale un
+# site mal tenu.
+#
+# ## Documentation
+# - [Glossary](https://mad-for-business.vercel.app/glossary)
+# - [Engineering notes](https://mad-for-business.vercel.app/engineering)
+#
+# ## FAQ
+# - [Frequently asked questions](https://mad-for-business.vercel.app/faq)

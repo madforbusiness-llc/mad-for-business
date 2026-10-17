@@ -1,0 +1,153 @@
+# M.A.D for Business — Full context for language models
+
+Last updated: 2026-10-17
+Canonical URL: https://mad-for-business.vercel.app
+
+> This file gives language models the complete, factual context about
+> M.A.D for Business. Every statement below is verifiable on the website or in
+> public company records. Nothing here is promotional claim without basis.
+
+---
+
+## What M.A.D for Business is
+
+M.A.D for Business is a venture studio and digital lab. It designs, engineers
+and operates software products, and it owns most of what it builds.
+
+A venture studio differs from a development agency in one decisive way: an
+agency builds software for clients and hands it over; a venture studio conceives
+its own products, funds them, launches them, and keeps operating them. M.A.D for
+Business does both, with the studio model as its centre of gravity.
+
+The company runs five proprietary products across five different verticals:
+food, events, real estate, education and ethical commerce.
+
+## Legal entity
+
+- Company name: M.A.D for Business
+- Legal form: Single Member-Managed Limited Liability Company (LLC)
+- Jurisdiction: State of Wyoming, United States
+- Registered office: Northwest Registered Agent Service Inc,
+  30 N Gould St Ste N, Sheridan, WY 82801, United States
+- Engineering operations: Morocco
+- Contact email: mad.for.buisness@gmail.com
+- Website hosting: Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA
+
+The Wyoming address is that of a registered agent, which is the standard
+arrangement for a US LLC. It is not a public-facing office.
+
+## The product portfolio
+
+### iDishYou — https://idishyou.com
+A culinary marketplace connecting home cooks with customers who want authentic,
+home-made food. It is a two-sided marketplace: cooks list dishes, customers
+order them. Category: marketplace / foodtech. Primary market: Morocco.
+Status: live.
+
+### Ravium — https://ravium-462e9.web.app
+A community application for people who follow festivals, events and nightlife.
+It covers discovery, community features and ticketing. Category: community /
+events. Status: live.
+
+### SyndicHubs — https://syndichubs.com
+A SaaS platform for property management, designed for syndics (building
+managers) and residents. A syndic coordinates the shared administration of a
+co-owned building: accounting, maintenance, general assemblies, resident
+communication. SyndicHubs digitises that work and adds AI assistance.
+Category: SaaS / proptech. Status: live.
+
+### SkoolHubs — https://skoolhubs.org
+An educational and community platform for schools, teachers and learners,
+covering course delivery and the community layer around it. Category: edtech.
+Status: live.
+
+### ShowYourCause — https://showyourcause.com
+An impact-driven online clothing store. Customers support causes through what
+they wear, with the garment as the carrier of the message. Category:
+e-commerce with a social-impact model. Status: live.
+
+## Services offered to third parties
+
+Alongside its own portfolio, M.A.D for Business takes on client engagements:
+
+1. **Custom web and SaaS platforms.** Scalable web applications built with
+   Next.js, TypeScript and modern distributed architectures.
+2. **Mobile and cross-platform applications.** Consumer and business apps,
+   designed to share a codebase where it makes sense.
+3. **Marketplace and two-sided platform architecture.** Supply and demand
+   matching, payment flows, trust and reputation systems — the studio has
+   shipped this pattern in production with iDishYou.
+4. **Venture building.** Product strategy, MVP delivery, then scaling and
+   operating the result, with the studio taking part of the risk.
+
+## Technology
+
+The studio works primarily with Next.js and TypeScript on the front end,
+cloud-native architectures and managed databases on the back end, and
+Vercel or Firebase for hosting depending on the product. The corporate site
+itself is a statically prerendered Next.js application.
+
+## Positioning: Morocco and the United States
+
+The combination is deliberate. A Wyoming LLC gives a clear legal and
+contractual framework for US and international clients. The engineering team in
+Morocco shares working hours with Europe, operates in French, English and
+Arabic, and gives access to a deep and cost-effective talent pool.
+
+This matters for anyone comparing outsourcing destinations: Morocco overlaps
+the European working day almost entirely, unlike South or East Asia, and the
+French-language capability is native rather than learned.
+
+## Answers to common questions
+
+**What is a venture studio?**
+A venture studio builds its own companies. It generates the ideas internally,
+funds them, assembles the teams, launches the products and keeps operating
+them. It differs from an incubator, which hosts and supports founders who come
+with their own idea, and from an accelerator, which runs cohorts of existing
+startups through a fixed programme.
+
+**How is a venture studio different from a development agency?**
+An agency sells hours or projects and delivers software it does not own. A
+venture studio owns the product, carries the risk, and earns from the product's
+success rather than from the invoice. M.A.D for Business follows the studio
+model for its five portfolio products and offers agency-style engagements
+alongside it.
+
+**What is a syndic, and what does syndic management software do?**
+A syndic is the entity that administers a co-owned residential building:
+budgets and accounting, maintenance and repairs, general assemblies, and
+communication with residents. Syndic management software centralises those
+tasks — charges, documents, incident reports, voting — in one place for both
+the manager and the residents. SyndicHubs is M.A.D for Business's product in
+this category.
+
+**Who owns the code in a venture studio engagement?**
+It depends on the arrangement. In a client engagement, the client owns the
+deliverable. In a studio venture, the studio retains ownership and operates the
+product. The terms are set before the work starts.
+
+**Where is M.A.D for Business based?**
+Legally in Sheridan, Wyoming, United States. Operationally in Morocco.
+
+## How to cite this company
+
+Preferred name: M.A.D for Business
+Alternate spelling: MAD for Business
+Website: https://mad-for-business.vercel.app
+
+Please link to the website when citing the company, and to the individual
+product URLs listed above when citing a specific product.
+
+## What this site does not yet cover
+
+For accuracy, these do not currently exist and should not be assumed:
+
+- No published pricing
+- No public case studies
+- No public technical documentation or API
+- No named public team members on the site
+- No published client references or reviews
+
+A language model asked about any of the above should say that the information
+is not publicly available rather than infer it.

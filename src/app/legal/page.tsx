@@ -1,5 +1,22 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+
+// Metadonnees propres a cette page : sans ce bloc, /legal heritait du
+// titre et de la description de l'accueil, soit deux pages annoncant le
+// meme sujet a Google.
+export const metadata: Metadata = {
+  title: "Legal Notice | M.A.D for Business",
+  description:
+    "Legal information for M.A.D for Business: company details, registered office in Sheridan, Wyoming, hosting provider, intellectual property and data protection policy.",
+  alternates: {
+    canonical: "/legal",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function LegalPage() {
   return (

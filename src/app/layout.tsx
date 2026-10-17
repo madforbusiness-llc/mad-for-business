@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,9 +16,12 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  // Adresse officielle du site. À remplacer par ton domaine le jour où tu en
-  // achètes un (et à brancher dans Vercel : Settings → Domains).
-  metadataBase: new URL("https://mad-for-business.vercel.app"),
+  // Adresse officielle du site, definie dans src/lib/site.ts : un seul
+  // endroit a changer le jour ou un nom de domaine est branche.
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: "/",
+  },
   title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
   description: "Concepteur et éditeur de solutions numériques & plateformes digitales. Based in Wyoming (USA) & Morocco, building for the world.",
   icons: {
@@ -27,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "M.A.D for Business | Digital Venture Studio & Tech Lab",
     description: "Building & scaling high-impact digital products. Based in Morocco, building for the world.",
-    url: "https://mad-for-business.vercel.app",
+    url: SITE_URL,
     siteName: "M.A.D for Business",
     images: [
       {
@@ -49,6 +54,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <JsonLd />
+      </head>
       <body className={`${inter.variable} ${syne.variable} antialiased min-h-screen bg-background text-foreground`}>
         <LanguageProvider>
           {children}
