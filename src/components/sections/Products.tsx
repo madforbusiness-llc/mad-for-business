@@ -4,8 +4,9 @@ import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { products, getProductStatus, type Product } from "@/data/products";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { ExternalLink, Hammer } from "lucide-react";
+import { ArrowRight, Hammer } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -31,23 +32,19 @@ function ProductCard({
   const showLogo = hasLogo && Boolean(product.logo) && !logoFailed;
   const showCover = Boolean(product.cover) && !coverFailed;
 
-  const CardWrapper = isLive ? "a" : "div";
-  const wrapperProps = isLive
-    ? { href: product.url, target: "_blank", rel: "noopener noreferrer" }
-    : {};
+  // La carte mene a la page produit interne. Le lien vers le site reel
+  // vit sur cette page : c'est ce qui construit le maillage interne, que
+  // des liens sortants directs ne produisaient pas.
+  const href = `/products/${product.id}`;
 
   return (
     <motion.div variants={itemVariants} className="group h-full">
-      <CardWrapper
-        {...wrapperProps}
+      <Link
+        href={href}
         className="block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent rounded-xl"
       >
         <Card
-          className={`h-full border-white/10 bg-brand-800/50 overflow-hidden flex flex-col transition-all duration-500 ${
-            isLive
-              ? "cursor-pointer hover:border-brand-accent/50 hover:shadow-[0_0_30px_rgba(244,63,94,0.15)] hover:-translate-y-2"
-              : ""
-          }`}
+          className="h-full border-white/10 bg-brand-800/50 overflow-hidden flex flex-col transition-all duration-500 cursor-pointer hover:border-brand-accent/50 hover:shadow-[0_0_30px_rgba(244,63,94,0.15)] hover:-translate-y-2"
         >
           {/* Zone visuelle : logo (+ image de fond facultative) */}
           <div
@@ -107,14 +104,10 @@ function ProductCard({
 
           <CardHeader className="pt-6">
             <h4
-              className={`text-2xl font-bold font-heading text-white flex items-center justify-between gap-3 transition-colors ${
-                isLive ? "group-hover:text-brand-accent" : ""
-              }`}
+              className="text-2xl font-bold font-heading text-white flex items-center justify-between gap-3 transition-colors group-hover:text-brand-accent"
             >
               {product.name}
-              {isLive && (
-                <ExternalLink className="w-5 h-5 shrink-0 opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all text-brand-accent" />
-              )}
+              <ArrowRight className="w-5 h-5 shrink-0 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-brand-accent" />
             </h4>
           </CardHeader>
 
@@ -140,7 +133,7 @@ function ProductCard({
             )}
           </CardContent>
         </Card>
-      </CardWrapper>
+      </Link>
     </motion.div>
   );
 }

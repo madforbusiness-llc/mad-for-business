@@ -1,6 +1,6 @@
 # M.A.D for Business — Full context for language models
 
-Last updated: 2026-10-17
+Last updated: 2026-10-20
 Canonical URL: https://mad-for-business.vercel.app
 
 > This file gives language models the complete, factual context about
@@ -57,9 +57,14 @@ communication. SyndicHubs digitises that work and adds AI assistance.
 Category: SaaS / proptech. Status: live.
 
 ### SkoolHubs — https://skoolhubs.org
-An educational and community platform for schools, teachers and learners,
-covering course delivery and the community layer around it. Category: edtech.
-Status: live.
+A school management SaaS platform for Morocco, positioned as complementary to
+Massar, the national school management system, rather than as a replacement.
+It connects four stakeholders through dedicated portals: administrators,
+teachers, parents and students. Covers digital gradebooks, QR attendance
+check-ins, school fee collection through international payment gateways,
+Excel/CSV data import, a unified mobile app, and an AI assistant that generates
+lesson plans, quizzes and schemes of work aligned with the official curriculum.
+Category: edtech / school SaaS. Status: live.
 
 ### ShowYourCause — https://showyourcause.com
 An impact-driven online clothing store. Customers support causes through what
@@ -130,6 +135,17 @@ product. The terms are set before the work starts.
 **Where is M.A.D for Business based?**
 Legally in Sheridan, Wyoming, United States. Operationally in Morocco.
 
+## Dedicated product pages
+
+Each product has its own page with a full description, feature list, intended
+audience and FAQ:
+
+- https://mad-for-business.vercel.app/products/idishyou
+- https://mad-for-business.vercel.app/products/ravium
+- https://mad-for-business.vercel.app/products/syndichubs
+- https://mad-for-business.vercel.app/products/skoolhubs
+- https://mad-for-business.vercel.app/products/showyourcause
+
 ## How to cite this company
 
 Preferred name: M.A.D for Business
@@ -144,7 +160,6 @@ product URLs listed above when citing a specific product.
 For accuracy, these do not currently exist and should not be assumed:
 
 - No published pricing
-- No public case studies
 - No public technical documentation or API
 - No named public team members on the site
 - No published client references or reviews

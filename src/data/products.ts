@@ -76,9 +76,9 @@ export const products: Product[] = [
     id: "skoolhubs",
     name: "SkoolHubs",
     description:
-      "A next-generation educational and community platform to transform the learning experience.",
-    category: "EdTech",
-    tags: ["Education", "Community", "E-learning"],
+      "A school management platform for Morocco connecting administrators, teachers, parents and students. Complementary to Massar.",
+    category: "EdTech / School SaaS",
+    tags: ["Morocco", "Education", "School Management"],
     url: "https://skoolhubs.org",
     logo: "/images/products/skoolhubs.png",
     theme: "from-emerald-500/20 to-teal-500/20",

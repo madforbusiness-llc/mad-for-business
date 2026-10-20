@@ -11,18 +11,27 @@ products listed below were built and are run by the studio.
 
 ## Products
 
-- [iDishYou](https://idishyou.com): culinary marketplace connecting home cooks
-  with customers. Category: marketplace / foodtech. Status: live.
-- [Ravium](https://ravium-462e9.web.app): community app for festival, event and
-  nightlife enthusiasts. Category: community / events. Status: live.
-- [SyndicHubs](https://syndichubs.com): SaaS platform for property management,
-  built for syndics and residents, with AI assistance. Category: SaaS /
-  proptech. Status: live.
-- [SkoolHubs](https://skoolhubs.org): educational and community platform for
-  schools and learners. Category: edtech. Status: live.
-- [ShowYourCause](https://showyourcause.com): impact-driven clothing store
-  letting people support causes through fashion. Category: e-commerce.
-  Status: live.
+Each product has a dedicated page on this site describing how it works, who
+it is for, and what it includes.
+
+- [iDishYou](https://mad-for-business.vercel.app/products/idishyou): culinary
+  marketplace connecting customers with verified home cooks nearby. No service
+  fee for customers, AI photo ordering, QR code collection. Live at
+  https://idishyou.com
+- [Ravium](https://mad-for-business.vercel.app/products/ravium): festival app
+  built on music matching, crew tracking and lineup clash detection. A separate
+  product, Ravium Business, serves organisers. Live at
+  https://ravium-462e9.web.app
+- [SyndicHubs](https://mad-for-business.vercel.app/products/syndichubs):
+  condominium management SaaS covering service charges, arrears, accounting,
+  general meetings and incident triage, for professional and volunteer property
+  managers. Live at https://syndichubs.com
+- [SkoolHubs](https://mad-for-business.vercel.app/products/skoolhubs): school
+  management SaaS for Morocco, complementary to Massar, connecting
+  administrators, teachers, parents and students. Live at https://skoolhubs.org
+- [ShowYourCause](https://mad-for-business.vercel.app/products/showyourcause):
+  cause-driven clothing store where each design carries a message. Live at
+  https://showyourcause.com
 
 ## Services
 
@@ -47,7 +56,14 @@ No public technical documentation is published at this time.
 
 ## FAQ
 
-No FAQ page is published at this time.
+There is no single FAQ page yet. Each product page carries its own
+frequently asked questions section:
+
+- https://mad-for-business.vercel.app/products/idishyou
+- https://mad-for-business.vercel.app/products/ravium
+- https://mad-for-business.vercel.app/products/syndichubs
+- https://mad-for-business.vercel.app/products/skoolhubs
+- https://mad-for-business.vercel.app/products/showyourcause
 
 ## Contact
 

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
+import { productPages } from "@/data/product-pages";
 
 /**
  * Genere /sitemap.xml.
@@ -19,6 +20,8 @@ const LAST_CONTENT_UPDATE = {
   home: "2026-09-16",
   // Mentions legales : texte inchange, metadonnees ajoutees.
   legal: "2026-10-17",
+  // Pages produit : publication initiale.
+  products: "2026-10-20",
 } as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -35,5 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    ...Object.keys(productPages).map((slug) => ({
+      url: `${SITE_URL}/products/${slug}`,
+      lastModified: LAST_CONTENT_UPDATE.products,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
   ];
 }
