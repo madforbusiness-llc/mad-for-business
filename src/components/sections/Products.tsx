@@ -16,12 +16,19 @@ const itemVariants = {
   },
 };
 
-function ProductCard({ product }: { product: Product }) {
+function ProductCard({
+  product,
+  hasLogo,
+}: {
+  product: Product;
+  /** Le fichier existe-t-il vraiment dans public/images/products ? */
+  hasLogo: boolean;
+}) {
   const [logoFailed, setLogoFailed] = useState(false);
   const [coverFailed, setCoverFailed] = useState(false);
 
   const isLive = getProductStatus(product) === "live" && Boolean(product.url);
-  const showLogo = Boolean(product.logo) && !logoFailed;
+  const showLogo = hasLogo && Boolean(product.logo) && !logoFailed;
   const showCover = Boolean(product.cover) && !coverFailed;
 
   const CardWrapper = isLive ? "a" : "div";
@@ -138,7 +145,7 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
-export function Products() {
+export function Products({ availableLogoIds }: { availableLogoIds: string[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const containerVariants = {
@@ -182,7 +189,11 @@ export function Products() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              hasLogo={availableLogoIds.includes(product.id)}
+            />
           ))}
         </motion.div>
       </div>
